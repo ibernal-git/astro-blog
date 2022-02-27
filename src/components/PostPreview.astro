@@ -13,11 +13,11 @@ function formatDate(date) {
 <article class="post">
 	<div class="data">
 		<h2>{post.title}</h2>
-		<a class="author" href={`/authors/${post.author}`}>{author.name}</a>
+		<a class="author" href={`/astro-blog/authors/${post.author}`}>{author.name}</a>
 		<time class="date" datetime={post.date}>{formatDate(post.date)}</time>
 		<p class="description">
 			{post.description}
-			<a class="link" href={post.url} aria-label={`Read ${post.title}`}>Read</a>
+			<a class="link" href={`/astro-blog/${post.url}`} aria-label={`Read ${post.title}`}>Read</a>
 		</p>
 	</div>
 </article>
